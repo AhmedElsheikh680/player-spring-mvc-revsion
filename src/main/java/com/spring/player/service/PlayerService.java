@@ -27,4 +27,25 @@ public class PlayerService {
     public Player getPlayer(int id){
         return playerRepo.findById(id).get();
     }
+
+    public void removePlayer(int id){
+        playerRepo.deleteById(id);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
