@@ -15,7 +15,7 @@
 <%--    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/add-customer-style.css"/>--%>
 </head>
 <body>
-<form:form  action="${pageContext.request.contextPath}/fifa/save" modelAttribute="player" method="get">
+<form:form  action="${pageContext.request.contextPath}/fifa/save" modelAttribute="player">
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="inputEmail4">Name</label>

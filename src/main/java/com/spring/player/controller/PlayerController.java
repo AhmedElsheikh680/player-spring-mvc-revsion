@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
@@ -36,7 +37,7 @@ public class PlayerController {
     }
 
     //http://localhost:8080/fifa/addPlayer
-    @GetMapping("/fifa/save")
+    @PostMapping("/fifa/save")
     public String addPlayerProcessing(@ModelAttribute  Player player){
         playerService.addPlayer(player);
         return "redirect:/fifa/players";
