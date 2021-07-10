@@ -40,5 +40,6 @@
 
     </tbody>
 </table>
+<a href="${pageContext.request.contextPath}/fifa/addPlayer" type="submit" class="btn btn-primary">Add Player</a>
 </body>
 </html>
