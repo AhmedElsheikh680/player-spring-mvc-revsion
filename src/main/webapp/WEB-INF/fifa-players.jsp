@@ -29,8 +29,12 @@
             <td>${player.number}</td>
             <td>${player.address}</td>
             <td>${player.phone}</td>
+
             <td>
-                <button type="button" class="btn btn-primary">Edit</button>
+                <c:url var="editPlayer" value="${pageContext.request.contextPath}/fifa/getPlayer">
+                    <c:param name="playerId" value="${player.id}"></c:param>
+                </c:url>
+                <a href="${editPlayer}" type="button" class="btn btn-primary">Edit</a>
                 <button type="button" class="btn btn-danger">Delete</button>
             </td>
         </tr>

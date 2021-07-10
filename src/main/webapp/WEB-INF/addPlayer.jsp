@@ -16,7 +16,12 @@
 </head>
 <body>
 <form:form  action="${pageContext.request.contextPath}/fifa/save" modelAttribute="player">
+
     <div class="form-row">
+        <div class="form-group col-md-6">
+
+            <form:hidden path="id"/>
+        </div>
         <div class="form-group col-md-6">
             <label for="inputEmail4">Name</label>
             <form:input path="name" class="form-control" id="inputEmail4" placeholder="Name" />
@@ -36,7 +41,7 @@
     </div>
 <br>
 
-    <button type="submit" class="btn btn-primary">Add !</button>
+    <button type="submit" class="btn btn-primary">Done !</button>
 </form:form>
 
 
